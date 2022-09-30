@@ -1,0 +1,20 @@
+$font:  'Dosis', sans-serif;
+$font-size-title: 3rem;
+$font-size-text: 1.8rem;
+$font-size-button-links: 2rem;
+$primary-color: #000;
+$second-color: #730D25;
+$withe-color: #fff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: $font;
+    font-size: 1.5rem;
+}
