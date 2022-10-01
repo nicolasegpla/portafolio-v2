@@ -1,0 +1,34 @@
+@use 'global';
+
+.container-header {
+    width: 100%;
+}
+.nav-container {
+    width: 100%;
+    height: 100px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        font-size: 3rem;
+        margin-left: 4rem;
+    }
+    &__list {
+        display: flex;
+        width: 600px;
+        gap: 8rem; 
+    }
+    &__list li {
+        list-style: none;
+    }
+    &__list li a{
+        text-decoration: none;
+        font-size: global.$font-size-button-links;
+        color: global.$primary-color;
+        font-weight: 600;
+    }
+    &__list li a:hover {
+        font-size: 1.8rem;
+    }
+}

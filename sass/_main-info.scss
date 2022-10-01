@@ -1,0 +1,79 @@
+@use 'global';
+
+.container-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.container-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        width: 50%;
+        &__profession {
+            font-size: global.$font-size-text;
+            font-weight: 600;
+            color: global.$second-color;
+        }
+        &__title {
+            font-size: global.$font-size-title;
+            font-weight: 600;
+            line-height: 6rem;
+        }
+        &__info {
+            font-size: global.$font-size-text;
+            font-weight: 500;
+            line-height: 2.2rem;
+            margin-top: 1rem;
+        }
+    }
+    &__buttons {
+        margin-top: 5rem;
+        display: flex;
+        width: 50%;
+        &__primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 35px;
+            border: none;
+            border-radius: 1.5rem;
+            background-color: global.$primary-color;
+            color: global.$withe-color;
+            gap: 1rem;
+            cursor: pointer;
+        }
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 4rem;
+            color: global.$second-color;
+            font-size: global.$font-size-button-links;
+            font-weight: 600;
+            gap: 0.3rem;
+            text-decoration: none;
+        }
+    }
+    
+}
+.text-color-dark {
+    color: #00ffff;
+}
+.button-dark-mode {
+    background-color: global.$withe-color;
+    color: global.$primary-color;
+    font-size: 13.3333px;
+    font-weight: 700;
+    font-family: Arial;
+}
+.container-img__img-main {
+    width: 600px;
+    margin-right: 10rem;
+}

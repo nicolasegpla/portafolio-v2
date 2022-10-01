@@ -1,0 +1,29 @@
+@use 'global';
+
+.container-button-dark-mode {
+    width: 40px;
+    height: 40px;
+    margin-right: 4rem;
+    border-radius: 50%;
+    border: none;
+    background-color: global.$primary-color;
+    cursor: pointer;
+}
+.container-second-color {
+    background-color: global.$withe-color;
+}
+
+.inactive {
+    display: none;
+}
+
+.background-body {
+    background-color: global.$primary-color;
+    color: global.$withe-color;
+}
+.background-body li a {
+    background-color: global.$primary-color;
+    color: global.$withe-color;
+}
+
+

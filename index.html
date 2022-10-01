@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nicolas Gracia Front-end</title>
     <link rel="stylesheet" href="css/estyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="container-header">
+        <nav class="nav-container">
+            <h2 class="nav-container__title">Front-end</h2>
+            <ul class="nav-container__list">
+                <li><a href="">Acerca de mi</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Versiones</a></li>
+            </ul>
+            <button class="container-button-dark-mode">
+                <img class="container-button-dark-mode__sun" src="assets/icons/sun.svg" alt="">
+                <img    class="container-button-dark-mode__moon inactive" src="assets/icons/moon.svg" alt="">
+            </button>
+        </nav>
+    </header>
+    <main class="container-main">
+        <section class="container-info">
+            <article class="container-info__text">
+                <p class="container-info__text__profession">Front-end Developer</p>
+                <h1 class="container-info__text__title">Hola!, Soy Nicolas.</h1>
+                <p class="container-info__text__info">Desarrollador Web, especificamente en el desarrollo Front-end, usando como lenguaje de programacion,  JavaScript.</p>
+            </article>
+            <article class="container-info__buttons">
+                <button class="container-info__buttons__primary"><img class="github-icon" src="assets/icons/github.svg" alt=""><img class="inactive github-dark" src="assets/icons/github-dark.svg" alt=""> GitHub</button>
+                <a class="container-info__buttons__link" href="#">Conocer Mas <img class="arrow-dark" src="assets/icons/arrow-right.svg" alt="">
+                <img class="inactive arrow-dark2" src="assets/icons/arrow-dark.svg" alt=""></a>
+            </article>
+        </section>
+        <section class="container-img">
+            <img class="container-img__img-main" src="assets/img/img-home.png" alt="">
+        </section>
+    </main>
     
     
 <script src="main.js"></script>
