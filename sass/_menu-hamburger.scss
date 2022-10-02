@@ -1,0 +1,16 @@
+@use 'global';
+
+.container-hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    background-color: global.$second-color;
+    cursor: pointer;
+    @include global.media-down(md) {
+        display: none;
+    }
+}

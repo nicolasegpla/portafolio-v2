@@ -1,0 +1,60 @@
+@use 'global';
+
+.container-menu {
+    width: 100%;
+    height: 100%;
+    background-color: global.$primary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @include global.media-down(md) {
+        display: none;
+    }
+    &__container-button {
+        width: 100%;
+        height: 9rem;
+        background-color: global.$primary-color;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        &__button {
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-right: 4rem;
+            border-radius: 50%;
+            border: none;
+            background-color: global.$withe-color;
+            cursor: pointer;
+        }
+    }
+    .container-menu__elements {
+        width: 100%;
+        height: 100%;
+        &__list-container {
+            width: 100%;
+            height: 100%;
+            background-color: global.$primary-color;
+            &__list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5rem;
+            }
+            &__list li {
+                list-style: none;
+            }
+            &__list li a {
+                text-decoration: none;
+                font-family: global.$font;
+                font-size: global.$font-size-title;
+                line-height: 10rem;
+                color: global.$withe-color;
+            }
+            &__list li a:hover {
+                color: global.$second-color;
+            }
+        }
+    }
+}

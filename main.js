@@ -7,12 +7,16 @@ const githubSun = document.querySelector('.github-icon');
 const githubMoon = document.querySelector('.github-dark');
 const profession = document.querySelector('.container-info__text__profession');
 const linkMain = document.querySelector('.container-info__buttons__link');
-const arrowDark = document.querySelector('.arrow-dark')
-const arrowDark2 = document.querySelector('.arrow-dark2')
+const arrowDark = document.querySelector('.arrow-dark');
+const arrowDark2 = document.querySelector('.arrow-dark2');
+const menuHamburger = document.querySelector('.container-hamburger');
+const menuMobile = document.querySelector('.container-menu');
+const buttonClose = document.querySelector('.button-close'); 
 
-
+buttonClose.addEventListener('click', toggleMenuMobile);
 buttonDarkMode.addEventListener('click', toggleDarkMode);
-buttonMain.addEventListener('click', goToPage)
+buttonMain.addEventListener('click', goToPage);
+menuHamburger.addEventListener('click', toggleMenuMobile);
 
 function toggleDarkMode() {
     buttonDarkMode.classList.toggle('container-second-color');
@@ -30,4 +34,8 @@ function toggleDarkMode() {
 
 function goToPage(){
     window.open ('https://github.com/nicolasegpla');
+}
+
+function toggleMenuMobile() {
+    menuMobile.classList.toggle('inactive');
 }

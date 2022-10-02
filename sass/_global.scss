@@ -3,8 +3,29 @@ $font-size-title: 4rem;
 $font-size-text: 1.8rem;
 $font-size-button-links: 1.6rem;
 $primary-color: #000;
-$second-color: #730D25;
+$second-color: #880788;
 $withe-color: #fff;
+
+$breackpoints: (
+    sm: 520px,
+    md: 950px,
+    lg: 951px,
+
+);
+
+@mixin media-up($breackpoint) {
+    @media screen and (max-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }
+}
+@mixin media-down($breackpoint) {
+    @media screen and (min-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }
+}
+@mixin color {
+    background-color: aqua;
+}
 
 * {
     box-sizing: border-box;
@@ -17,4 +38,8 @@ html {
 body {
     font-family: $font;
     font-size: 1.5rem;
+    
+}
+.inactive {
+    display: none;
 }

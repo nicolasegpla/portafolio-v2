@@ -2,10 +2,15 @@
 
 .container-main {
     width: 100%;
+    min-width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: start;
+    position: relative;
+    @include global.media-up(md) {
+     flex-wrap: wrap-reverse;   
+    }
 }
 .container-info {
     width: 50%;
@@ -13,8 +18,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include global.media-up(md) {
+        width: 100%;
+        align-items: center; 
+       }
     &__text {
         width: 50%;
+        @include global.media-up(sm) {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+       }
+       @include global.media-up(md) {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
         &__profession {
             font-size: global.$font-size-text;
             font-weight: 600;
@@ -24,23 +49,50 @@
             font-size: global.$font-size-title;
             font-weight: 600;
             line-height: 6rem;
+            min-width: 300px;
         }
         &__info {
             font-size: global.$font-size-text;
             font-weight: 500;
             line-height: 2.2rem;
             margin-top: 1rem;
+            min-width: 300px;
+            @include global.media-up(md) {
+                max-width: 400px; 
+            }
         }
     }
     &__buttons {
         margin-top: 5rem;
         display: flex;
         width: 50%;
+        @include global.media-up(sm) {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 3rem;
+       }
+       @include global.media-up(md) {
+            margin-bottom: 4rem;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 3rem;
+       }
+        
+   
+       
         &__primary {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 130px;
+            min-width: 130px;
             height: 35px;
             border: none;
             border-radius: 1.5rem;
@@ -53,12 +105,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 4rem;
+            margin-left: 2rem;
+            min-width: 130px;
             color: global.$second-color;
             font-size: global.$font-size-button-links;
             font-weight: 600;
             gap: 0.3rem;
             text-decoration: none;
+            @include global.media-up(sm) {
+                margin-left: 0.5rem;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+           }
         }
     }
     
@@ -75,5 +133,13 @@
 }
 .container-img__img-main {
     width: 600px;
-    margin-right: 10rem;
+    @include global.media-up(md) {
+            width: 500px;
+            
+       }
+    @include global.media-up(sm) {
+        width: 380px;
+        
+   }
+    
 }
