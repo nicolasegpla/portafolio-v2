@@ -12,11 +12,22 @@ const arrowDark2 = document.querySelector('.arrow-dark2');
 const menuHamburger = document.querySelector('.container-hamburger');
 const menuMobile = document.querySelector('.container-menu');
 const buttonClose = document.querySelector('.button-close'); 
+const linkedinButton = document.querySelector('.container-button-web__linkedin');
+const certificationButton = document.querySelector('.container-button-web__certificacion');
+const curriculumButton = document.querySelector('.container-button-web__cv');
+
+
+
+
+
 
 buttonClose.addEventListener('click', toggleMenuMobile);
 buttonDarkMode.addEventListener('click', toggleDarkMode);
 buttonMain.addEventListener('click', goToPage);
 menuHamburger.addEventListener('click', toggleMenuMobile);
+linkedinButton.addEventListener('click', goToPageLinkedin);
+certificationButton.addEventListener('click', goToPageCv);
+curriculumButton.addEventListener('click', goToPageCurriculum);
 
 function toggleDarkMode() {
     buttonDarkMode.classList.toggle('container-second-color');
@@ -30,12 +41,23 @@ function toggleDarkMode() {
     linkMain.classList.toggle('text-color-dark');
     arrowDark.classList.toggle('inactive');
     arrowDark2.classList.toggle('inactive');
+    
 }
 
 function goToPage(){
     window.open ('https://github.com/nicolasegpla');
 }
-
+function goToPageLinkedin(){
+    window.open ('https://www.linkedin.com/in/frontend-nicolas-garcia/');
+}
+function goToPageCv(){
+    window.open ('https://www.linkedin.com/in/frontend-nicolas-garcia/details/certifications/');
+}
+function goToPageCurriculum(){
+    window.open ('https://responsible-board-65b.notion.site/curriculum-b042d3d6e4fc4cffb9f2f0b506dea27f');
+}
 function toggleMenuMobile() {
     menuMobile.classList.toggle('inactive');
+    
 }
+

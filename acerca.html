@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mi</title>
+    <link rel="stylesheet" href="css/estyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<header class="container-header">
+    <nav class="nav-container">
+        <h2 class="nav-container__title">Front-end</h2>
+        <ul class="nav-container__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Acerca de mi</a></li>
+            <li><a href="">Proyectos</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+        <button class="container-button-dark-mode">
+            <img class="container-button-dark-mode__sun" src="assets/icons/sun.svg" alt="">
+            <img    class="container-button-dark-mode__moon inactive" src="assets/icons/moon.svg" alt="">
+        </button>
+    </nav>
+</header>
+<body>
+    <main class="main-about">
+        <article class="container-menu inactive">
+            <section class="container-menu__container-button">
+                <button class="container-menu__container-button__button button-close"><img  class="close" src="assets/icons/close.svg" alt=""></button>
+            </section>
+            <section class="container-menu__elements">
+                <article class="container-menu__elements__list-container">
+                    <ul class="container-menu__elements__list-container__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="acerca.html">Acerca de mi</a></li>
+                        <li><a href="">Proyectos</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </article>
+            </section>
+        </article>
+        <button class="container-hamburger">
+            <img class="container-hamburger__menu" src="assets/icons/hamburger.svg" alt="">
+        </button>
+
+        <section class="container-about-info">
+            <article class="container-about">
+                <h1 class="container-about__title">Acerca de mi.</h1>
+                <p class="container-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam itaque, distinctio voluptatum vel impedit quos odio. Aut quaerat placeat perferendis vitae nesciunt cupiditate facilis, rerum ea quia libero doloribus.</p>
+                <h2 class="container-about__study-title"> Lenguajes y Herramientas</h2>
+                <section class="container-tools">
+                    <p class="array-tools">
+                        const lenguajes = {
+                            'JavaScript', 'HTML5', 'CSS3', 'Sass',<br>
+                            'Pug', 'Git', 'GitHub'
+                        };
+                    </p>
+                <section class="container-button-web">
+                    <button class="container-info__buttons__primary" id="github"><img class="github-icon" src="assets/icons/github.svg" alt=""> <img class="github-dark inactive" src="assets/icons/github-dark.svg" alt=""> GitHub</button>
+                    <button class="container-button-web__linkedin"><img src="assets/icons/linkedin.svg" alt=""> LinKedIn</button>
+                    <button class="container-button-web__cv"><img src="assets/icons/cv.svg" alt=""> Curriculum</button>
+                    <button class="container-button-web__certificacion">Certificaciones<img src="assets/icons/arrow-black.svg" alt=""></button>
+                </section>
+                </section>
+                
+            </article>
+            <article class="container-about-study">
+                <img class="img-perfil-camara" src="assets/img/detras-de-camaras.jpeg" alt="">
+            </article>
+        </section>
+    </main>
+    
+            
+            
+
+        
+        
+    
+    <script src="main.js"></script>
+</body>
+</html>
