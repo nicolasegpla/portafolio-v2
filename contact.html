@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de mi</title>
+    <title>Contactame</title>
     <link rel="stylesheet" href="css/estyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <header class="container-header">
     <nav class="nav-container">
@@ -16,6 +15,7 @@
             <li><a href="acerca.html">Acerca de mi</a></li>
             <li><a href="">Proyectos</a></li>
             <li><a href="contact.html">Contacto</a></li>
+            
         </ul>
         <button class="container-button-dark-mode">
             <img class="container-button-dark-mode__sun" src="assets/icons/sun.svg" alt="">
@@ -24,7 +24,7 @@
     </nav>
 </header>
 <body>
-    <main class="main-about">
+    <main class="container-contact">
         <article class="container-menu inactive">
             <section class="container-menu__container-button">
                 <button class="container-menu__container-button__button button-close"><img  class="close" src="assets/icons/close.svg" alt=""></button>
@@ -44,39 +44,46 @@
             <img class="container-hamburger__menu" src="assets/icons/hamburger.svg" alt="">
         </button>
 
-        <section class="container-about-info">
-            <article class="container-about">
-                <h1 class="container-about__title">Acerca de mi.</h1>
-                <p class="container-about__text">Hola! soy Nicolás García, Estudiante de desarrollo web - front-end en Platzi, con un año de experiencia técnica logrando desarrollar proyectos con la metodología BEM y usando sistemas  de diseño Mobile First y desktop First.</p>
-                <h2 class="container-about__study-title"> Lenguajes y Herramientas</h2>
-                <section class="container-tools">
-                    <p class="array-tools">
-                        const lenguajes = {
-                            'JavaScript', 'HTML5', 'CSS3', 'Sass',<br>
-                            'Pug', 'Git', 'GitHub'
-                        };
-                    </p>
-                <section class="container-button-web">
-                    <button class="container-info__buttons__primary" id="github"><img class="github-icon" src="assets/icons/github.svg" alt=""> <img class="github-dark inactive" src="assets/icons/github-dark.svg" alt=""> GitHub</button>
-                    <button class="container-button-web__linkedin"><img src="assets/icons/linkedin.svg" alt=""> LinKedIn</button>
-                    <button class="container-button-web__cv"><img src="assets/icons/cv.svg" alt=""> Curriculum</button>
-                    <button class="container-button-web__certificacion">Certificaciones<img src="assets/icons/arrow-black.svg" alt=""></button>
+
+        <section class="main-contact">
+            <section class="contact-img">
+                <img src="assets/img/img-home.png" alt="">
+            </section>
+
+           <section class="contact-form">
+                <section class="container-form">
+                    <h1 class="container-form__title">Hablemos</h1>
+                    <p class="container-form__text">Llena este formulario o enviame un correo con tu consulta.</p>
+                    <form class="container-form__form" action="">
+
+                        <input name="nombre" class="container-form__form__input-name" type="text" placeholder="Nombre">  
+                        <input name="correo" class="container-form__form__input-email" type="text" placeholder="Email">
+                        <textarea name="mensaje" class="container-form__form__textarea-mensaje" placeholder="Mensaje" name="textarea" cols="30" rows="10"></textarea>
+                        <button class="container-form__form__button">Enviar</button>
+
+                    </form>
                 </section>
+
+                <section class="container-redes">
+                    <button class="container-redes__red1"><img src="assets/icons/github.blue.svg" alt=""></button>
+                    <button class="container-redes__red2"><img src="assets/icons/linkedin-blue.svg" alt=""></button>
+                    <button class="container-redes__red3"><img src="assets/icons/whatsapp.svg" alt=""></button>
+                    <button class="container-redes__red4"><img src="assets/icons/cv-blue.svg" alt=""></button>
                 </section>
-                
-            </article>
-            <article class="container-about-study">
-                <img class="img-perfil-camara" src="assets/img/detras-de-camaras.jpeg" alt="">
-            </article>
-        </section>
-    </main>
-    
             
+           </section>
+
+        </section>
+           
+                
+
+
+            
+                
             
 
-        
-        
-    
-    <script src="acerca.js"></script>
+    </main>
+
+<script src="contact.js"></script>
 </body>
 </html>

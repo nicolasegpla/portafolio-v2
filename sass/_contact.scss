@@ -1,0 +1,168 @@
+@use 'global';
+
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact-img {
+    width: 40%;
+    min-width: 350px;
+    @include global.media-up(sm) {
+        display: none; 
+       }
+}
+.contact-img img {
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    @include global.media-up(md) {
+        margin-left: 0; 
+       }
+}
+.contact-form {
+    width: 60%;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6rem;
+}
+.container-form {
+    width: 290px;
+    height: 350px;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        color: global.$primary-color;
+        font-size: global.$font-size-title;
+    }
+    &__text {
+        width: 250px;
+        margin-top: 2rem;
+        font-weight: 400;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+        &__input-name {
+            width: 100%;
+            height: 3.5rem;
+            border-radius: 0.8rem;
+            border: solid 2px  global.$primary-color;
+            padding-left: 1.5rem;
+        }
+        &__input-name::placeholder {
+            color:  global.$primary-color;
+            font-size: 1.4rem;
+        }
+        &__input-email {
+            width: 100%;
+            height: 3.5rem;
+            border-radius: 0.8rem;
+            border: solid 2px  global.$primary-color;
+            padding-left: 1.5rem;
+        }
+        &__input-email::placeholder {
+            color:  global.$primary-color;
+            font-size: 1.4rem;   
+        }
+        &__textarea-mensaje {
+            width: 100%;
+            height: 9rem;
+            border-radius: 0.8rem;
+            border: solid 2px  global.$primary-color;
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        &__textarea-mensaje::placeholder {
+            color:  global.$primary-color;
+            font-size: 1.5rem;
+        }
+        &__button {
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            border-radius: 0.8rem;
+            border: none;
+            background-color:  global.$primary-color;
+            margin-top: 2rem;
+            color: global.$withe-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.container-redes {
+    width: 40px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 13rem;
+    justify-content: space-around;
+    align-items: center;
+    &__red1 {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        border: none;
+        background-color:  global.$primary-color;
+        cursor: pointer;
+    }
+    &__red1 img {
+        margin-top: 0.4rem;
+    }
+    &__red2 {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        border: none;
+        background-color:  global.$primary-color;
+        cursor: pointer;
+    }
+    &__red2 img {
+        margin-top: 0.2rem;
+    }
+    &__red3 {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        border: none;
+        background-color:  global.$primary-color;
+        cursor: pointer;
+    }
+    &__red3 img {
+        margin-top: 0.2rem;
+    }
+    &__red4 {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        border: none;
+        background-color:  global.$primary-color;
+        cursor: pointer;
+    }
+    &__red4 img {
+        margin-top: 0.2rem;
+    }
+}
+
+.contact-dark {
+    color: global.$withe-color;
+}
+.button-dark-form {
+    color: global.$primary-color;
+    background-color: global.$withe-color;
+}
