@@ -1,0 +1,41 @@
+@use 'global';
+
+.galery-project {
+    width: 100%;
+}
+.container-pagina-construccion {
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__img {
+        width: 50%;
+        @include global.media-up(md) {
+            margin-top: 0;
+            width: 500px;
+       }
+       @include global.media-up(sm) {
+        margin-top: 3rem;
+        width: 340px;
+        }
+    }
+    &__title {
+        font-size: global.$font-size-title;
+        text-align: center;
+        @include global.media-up(sm) {
+            line-height: 4.2rem;
+            }
+    }
+    &__text {
+        font-size: global.$font-size-text;
+        text-align: center;
+        margin-top: 1.5rem;
+        width: 70%;
+        @include global.media-up(sm) {
+            width: 100%;
+            }
+    }
+    
+}

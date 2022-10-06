@@ -807,4 +807,52 @@ body {
   background-color: #fff;
 }
 
+.galery-project {
+  width: 100%;
+}
+
+.container-pagina-construccion {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-pagina-construccion__img {
+  width: 50%;
+}
+@media screen and (max-width: 950px) {
+  .container-pagina-construccion__img {
+    margin-top: 0;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .container-pagina-construccion__img {
+    margin-top: 3rem;
+    width: 340px;
+  }
+}
+.container-pagina-construccion__title {
+  font-size: 4rem;
+  text-align: center;
+}
+@media screen and (max-width: 520px) {
+  .container-pagina-construccion__title {
+    line-height: 4.2rem;
+  }
+}
+.container-pagina-construccion__text {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  width: 70%;
+}
+@media screen and (max-width: 520px) {
+  .container-pagina-construccion__text {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=estyle.css.map */

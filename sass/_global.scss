@@ -23,9 +23,6 @@ $breackpoints: (
         @content;
     }
 }
-@mixin color {
-    background-color: aqua;
-}
 
 * {
     box-sizing: border-box;
