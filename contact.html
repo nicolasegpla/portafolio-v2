@@ -6,85 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactame</title>
     <link rel="stylesheet" href="css/estyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<header class="container-header">
-    <nav class="nav-container">
-        <h2 class="nav-container__title">Front-end</h2>
-        <ul class="nav-container__list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="acerca.html">Acerca de mi</a></li>
-            <li><a href="">Proyectos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            
-        </ul>
-        <button class="container-button-dark-mode">
-            <img class="container-button-dark-mode__sun" src="assets/icons/sun.svg" alt="">
-            <img    class="container-button-dark-mode__moon inactive" src="assets/icons/moon.svg" alt="">
-        </button>
-    </nav>
-</header>
 <body>
-    <main class="container-contact">
-        <article class="container-menu inactive">
-            <section class="container-menu__container-button">
-                <button class="container-menu__container-button__button button-close"><img  class="close" src="assets/icons/close.svg" alt=""></button>
-            </section>
-            <section class="container-menu__elements">
-                <article class="container-menu__elements__list-container">
-                    <ul class="container-menu__elements__list-container__list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="acerca.html">Acerca de mi</a></li>
-                        <li><a href="">Proyectos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </article>
-            </section>
-        </article>
-        <button class="container-hamburger">
-            <img class="container-hamburger__menu" src="assets/icons/hamburger.svg" alt="">
-        </button>
+    <header class="container-header">
+        <nav class="nav-container">
+            <h2 class="nav-container__title">Front-end</h2>
+            <ul class="nav-container__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acerca.html">Acerca de mi</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                
+            </ul>
+            <button class="container-button-dark-mode">
+                <img class="container-button-dark-mode__sun" src="assets/icons/sun.svg" alt="">
+                <img    class="container-button-dark-mode__moon inactive" src="assets/icons/moon.svg" alt="">
+            </button>
+        </nav>
+    </header>
+
+        <main class="container-contact">
+            <article class="container-menu inactive">
+                <section class="container-menu__container-button">
+                    <button class="container-menu__container-button__button button-close"><img  class="close" src="assets/icons/close.svg" alt=""></button>
+                </section>
+                <section class="container-menu__elements">
+                    <article class="container-menu__elements__list-container">
+                        <ul class="container-menu__elements__list-container__list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="acerca.html">Acerca de mi</a></li>
+                            <li><a href="">Proyectos</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </article>
+                </section>
+            </article>
+            <button class="container-hamburger">
+                <img class="container-hamburger__menu" src="assets/icons/hamburger.svg" alt="">
+            </button>
 
 
-        <section class="main-contact">
-            <section class="contact-img">
-                <img src="assets/img/img-home.png" alt="">
-            </section>
-
-           <section class="contact-form">
-                <section class="container-form">
-                    <h1 class="container-form__title">Hablemos</h1>
-                    <p class="container-form__text">Llena este formulario o enviame un correo con tu consulta.</p>
-                    <form id="form" class="container-form__form" action="">
-
-                        <input name="nombre" class="container-form__form__input-name" type="text" placeholder="Nombre" required>  
-                        <input name="correo" class="container-form__form__input-email" type="text" placeholder="Email" required>
-                        <textarea name="mensaje" class="container-form__form__textarea-mensaje" placeholder="Mensaje" name="textarea" cols="30" rows="10" required></textarea>
-                        <input type="submit" id="button" value="Enviar" class="container-form__form__button">
-
-                    </form>
+            <section class="main-contact">
+                <section class="contact-img">
+                    <img src="assets/img/img-home.png" alt="">
                 </section>
 
-                <section class="container-redes">
-                    <button class="container-redes__red1"><img src="assets/icons/github.blue.svg" alt=""></button>
-                    <button class="container-redes__red2"><img src="assets/icons/linkedin-blue.svg" alt=""></button>
-                    <button class="container-redes__red3"><img src="assets/icons/whatsapp.svg" alt=""></button>
-                    <button class="container-redes__red4"><img src="assets/icons/cv-blue.svg" alt=""></button>
-                </section>
-            
-           </section>
+            <section class="contact-form">
+                    <section class="container-form">
+                        <h1 class="container-form__title">Hablemos</h1>
+                        <p class="container-form__text">Llena este formulario o enviame un correo con tu consulta.</p>
+                        <form id="form" class="container-form__form" action="">
 
-        </section>
-           
+                            <input name="nombre" class="container-form__form__input-name" type="text" placeholder="Nombre" required>  
+                            <input name="correo" class="container-form__form__input-email" type="text" placeholder="Email" required>
+                            <textarea name="mensaje" class="container-form__form__textarea-mensaje" placeholder="Mensaje" name="textarea" cols="30" rows="10" required></textarea>
+                            <input type="submit" id="button" value="Enviar" class="container-form__form__button">
+
+                        </form>
+                    </section>
+
+                    <section class="container-redes">
+                        <button class="container-redes__red1"><img src="assets/icons/github.blue.svg" alt=""></button>
+                        <button class="container-redes__red2"><img src="assets/icons/linkedin-blue.svg" alt=""></button>
+                        <button class="container-redes__red3"><img src="assets/icons/whatsapp.svg" alt=""></button>
+                        <button class="container-redes__red4"><img src="assets/icons/cv-blue.svg" alt=""></button>
+                    </section>
                 
+            </section>
 
-
+            </section>
             
-                
-            
+        </main>
 
-    </main>
-
-<script src="contact.js"></script>
+    <script src="contact.js"></script>
 
 </body>
 <script type="text/javascript"

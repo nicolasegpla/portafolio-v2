@@ -1,5 +1,6 @@
 @use 'global';
 
+
 .container-contact {
     width: 100%;
     display: flex;
@@ -206,4 +207,5 @@
 .button-dark-form {
     color: global.$primary-color;
     background-color: global.$withe-color;
+    
 }
