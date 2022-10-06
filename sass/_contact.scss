@@ -18,6 +18,9 @@
     @include global.media-up(sm) {
         display: none; 
        }
+    @include global.media-up(md) {
+        display: none; 
+       }
 }
 .contact-img img {
     width: 100%;
@@ -34,6 +37,26 @@
     justify-content: center;
     align-items: center;
     margin-right: 6rem;
+    @include global.media-up(sm) {
+        min-width: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+    @include global.media-up(md) {
+        min-width: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
 }
 .container-form {
     width: 290px;
@@ -113,6 +136,24 @@
     margin-top: 13rem;
     justify-content: space-around;
     align-items: center;
+    @include global.media-up(sm) {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 7rem;
+        margin-left: 0;
+        margin-bottom: 4rem;
+       }
+    @include global.media-up(md) {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 7rem;
+        margin-left: 0;
+        margin-bottom: 4rem;
+       }   
     &__red1 {
         width: 3.2rem;
         height: 3.2rem;
