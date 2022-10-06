@@ -18,6 +18,10 @@
         font-size: 3rem;
         margin-left: 4rem;
     }
+    &__title a {
+        text-decoration: none;
+        color: global.$primary-color;
+    }
     &__list {
         display: flex;
         width: 600px;

@@ -39,6 +39,10 @@ body {
   font-size: 3rem;
   margin-left: 4rem;
 }
+.nav-container__title a {
+  text-decoration: none;
+  color: #000;
+}
 .nav-container__list {
   display: flex;
   width: 600px;
