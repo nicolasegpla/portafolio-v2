@@ -54,12 +54,12 @@
                 <section class="container-form">
                     <h1 class="container-form__title">Hablemos</h1>
                     <p class="container-form__text">Llena este formulario o enviame un correo con tu consulta.</p>
-                    <form class="container-form__form" action="">
+                    <form id="form" class="container-form__form" action="">
 
-                        <input name="nombre" class="container-form__form__input-name" type="text" placeholder="Nombre">  
-                        <input name="correo" class="container-form__form__input-email" type="text" placeholder="Email">
-                        <textarea name="mensaje" class="container-form__form__textarea-mensaje" placeholder="Mensaje" name="textarea" cols="30" rows="10"></textarea>
-                        <button class="container-form__form__button">Enviar</button>
+                        <input name="nombre" class="container-form__form__input-name" type="text" placeholder="Nombre" required>  
+                        <input name="correo" class="container-form__form__input-email" type="text" placeholder="Email" required>
+                        <textarea name="mensaje" class="container-form__form__textarea-mensaje" placeholder="Mensaje" name="textarea" cols="30" rows="10" required></textarea>
+                        <input type="submit" id="button" value="Enviar" class="container-form__form__button">
 
                     </form>
                 </section>
@@ -85,5 +85,13 @@
     </main>
 
 <script src="contact.js"></script>
+
 </body>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('hkfYCRTAyBOiyqrP3')
+</script>
+<script src="form.js"></script>
 </html>
